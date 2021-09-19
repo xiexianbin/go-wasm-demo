@@ -1,0 +1,16 @@
+<html lang="zh-cn">
+    <header>
+        <script src="static/wasm_exec.js"></script>
+        <script>
+            const go = new Go();
+            WebAssembly.instantiateStreaming(
+                fetch("static/main.wasm"), go.importObject
+            ).then((result) => go.run(result.instance));
+        </script>
+    </header>
+    <body>
+        <input id="num" type="number" />
+        <button id="btn">Click</button>
+        <p id="answer">1</p>
+    </body>
+</html>
