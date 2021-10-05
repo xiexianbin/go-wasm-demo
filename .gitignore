@@ -14,7 +14,14 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
+.history/
 .DS_Store
 .idea/
 *.wasm
 
+demo-vue2/node_modules
+demo-vue2/dist
+demo-vue3/node_modules
+demo-vue3/dist
+demo-quasar2/node_modules
+demo-quasar2/dist
